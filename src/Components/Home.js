@@ -33,7 +33,8 @@ editTodoValue, editModal, updateTodoHandler}) => {
             <form autoComplete='off' className='form-group'
             onSubmit={handleTodoSubmit}>
 
-            {currentUser&&<>
+            {currentUser&&<div className="todo-app">
+          
               <input type="text" placeholder="Enter TODO's"
                 className='form-control' required
                 onChange={(e)=>setTodo(e.target.value)}
@@ -48,7 +49,7 @@ editTodoValue, editModal, updateTodoHandler}) => {
                 </button>
               </div>
               
-            </>}
+            </div>}
 
             {!currentUser&&<>
               <input type="text" placeholder="Enter TODO's"
