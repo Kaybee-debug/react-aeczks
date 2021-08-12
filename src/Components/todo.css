@@ -12,8 +12,7 @@
     rgba(48, 16, 255, 1) 0%,
     rgba(100, 115, 255, 1) 100%
   );*/
-
-.todo-app {
+/*.todo-app {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -24,4 +23,40 @@
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+}*/
+.todo-app{
+  
+ 
+  text-align: center;
+  border-radius: 0px;
+  padding-bottom: 32px;
+  
+  
+
+}
+.todo-button{
+  padding: 16px;
+  border:none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient( 90deg,rgb(10, 46, 126)0%, rgb(20, 3, 82)100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+h1{
+  margin: 22px 0;
+  color: #fff;
+  font-size: 50px;
+}
+.todo-input{
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #0c99d1;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+.todo-input::placeholder{
+  color: #e2e2e2;
 }

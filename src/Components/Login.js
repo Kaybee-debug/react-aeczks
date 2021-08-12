@@ -5,6 +5,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import TextField from '@material-ui/core/TextField';
 
 
 
@@ -59,23 +60,26 @@ export const Login = (props) => {
         <br></br>
         <Grid  align="center"  item xs={12} sm={4}>
           <Paper style={{ borderRadius: '0px',height:"550px",marginTop:"100px"}}
-           className={classes.paper}><h2>LOGIN HERE</h2>
-           
+           className={classes.paper}><h2>SIGN IN</h2>
+            <br></br>
+               <br></br>
            <form autoComplete="off" 
            onSubmit={handleLogin}>
                
               
-               <input type="email" className='form-control'
+               <TextField type="email" label="Your email" variant="outlined"
                    required onChange={(e)=>setEmail(e.target.value)}
                    value={email}
 
                />
                <br></br>
-               
-               <input type="password" className='form-control'
+               <br></br>
+               <TextField type="password" 
+               label="Password" variant="outlined"
                    required onChange={(e)=>setPassword(e.target.value)}
                    value={password}
                />
+               <br></br>
                <br></br>
                <button type="submit" className='btn btn-success mybtn2'>
                   LOGIN
@@ -84,9 +88,10 @@ export const Login = (props) => {
            {loginError&&<div className='error-msg'>
                {loginError}
            </div>}
-           
-           <span>Don't have an account? Create One
-           <Link to="signup"> here</Link></span></Paper>
+           <br></br>
+              
+           <span>Don't have an account? 
+           <Link to="signup"> signup</Link></span></Paper>
         </Grid>
        
       

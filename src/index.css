@@ -116,7 +116,7 @@ div.wrapper{
 
 /* todo */
 .todo{
-  background-color: #e4e4e4;
+  background-color: #1b0bf5;
   font-weight: 600;
   font-size: 16px; 
   margin: 10px 0px;
@@ -124,6 +124,7 @@ div.wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .todo .actions-div{
@@ -187,7 +188,7 @@ div.wrapper{
 }
 
 .modal-container .modal .header .close-btn{
-  color: rgb(165, 2, 2);
+  color: rgb(14, 147, 224);
   cursor: pointer;
 }
 body{

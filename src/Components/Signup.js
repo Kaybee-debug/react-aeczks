@@ -4,6 +4,7 @@ import {auth, db} from '../Config/Config'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,28 +55,37 @@ export const Signup = (props) => {
           <Paper style={{ borderRadius: '0px',height:"550px",marginTop:"100px"}}
            className={classes.paper}>
             
-            <h2>REGISTER HERE</h2>
+            <h2>SIGN UP</h2>
             <br></br>
+            <br></br>
+               
             <form autoComplete="off" className='form-group'
             onSubmit={handleRegister}>
-                <label>Enter Full Name</label>
-                <input type="text" className='form-control'
+               
+                <TextField type="text" 
+                 label="Enter  Name" variant="outlined"
                     required onChange={(e)=>setFullName(e.target.value)}
                     value={fullName}
                 />
                 <br></br>
-                <label>Enter Email</label>
-                <input type="email" className='form-control'
+                <br></br>
+               
+                <TextField type="email" 
+                label="Enter  Email" variant="outlined"
                     required onChange={(e)=>setEmail(e.target.value)}
                     value={email}
                 />
                 <br></br>
-                <label>Enter Password</label>
-                <input type="password" className='form-control'
+                <br></br>
+               
+                <TextField type="password" 
+                label="Enter  Password" variant="outlined"
                     required onChange={(e)=>setPassword(e.target.value)}
                     value={password}
                 />
                 <br></br>
+                 <br></br>
+               
                 <button type="submit" className='btn btn-success mybtn2'>
                    REGISTER
                 </button>
@@ -84,8 +94,8 @@ export const Signup = (props) => {
                 {registerationError}
             </div>}
            
-            <span>Already have an account? Login
-            <Link to="login"> here</Link></span></Paper>
+            <span>Already have an account? 
+            <Link to="login">Login</Link></span></Paper>
             </Grid>
             </Grid>
         </div>
