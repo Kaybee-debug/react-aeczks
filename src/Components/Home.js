@@ -37,9 +37,7 @@ editTodoValue, editModal, updateTodoHandler}) => {
 
     return (
         <div className='wrapper'>
-          <Header currentUser={currentUser}/>
-          <br></br>
-          <br></br>
+       
           <div className='container'>
             <form autoComplete='off' className='form-group'
             onSubmit={handleTodoSubmit}>
@@ -139,20 +137,12 @@ editTodoValue, editModal, updateTodoHandler}) => {
             </div>}
 
             {!currentUser&&<>
-              <input type="text" placeholder="Enter TODO's"
-                className='form-control' required disabled
-              />
-              <br></br>
-              <div style={{width: 100+'%',
-              display: 'flex',justifyContent: 'flex-end'}}>
-                <button type="submit" className='btn btn-success'
-                disabled style={{width: 100+'%'}}>
-                   ADD
-                </button>
-              </div>
-              <div className='error-msg'>
-                Please register your account or login to use application
-              </div>
+              
+              <Header currentUser={currentUser}/>
+
+
+              <p>stryuopysgfuo</p>
+
             </>}
             
             </form>
