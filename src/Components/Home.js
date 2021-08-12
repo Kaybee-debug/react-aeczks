@@ -140,7 +140,7 @@ editTodoValue, editModal, updateTodoHandler}) => {
 
             {!currentUser&&<>
               
-              <Header currentUser={currentUser}/>
+             
               <div style={{backgroundImage:'green'}}>
 
 
