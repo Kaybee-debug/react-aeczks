@@ -31,8 +31,8 @@ export const Header = ({ currentUser }) => {
     <div className="header-box">
       <div className="leftside">
         <div className="content">
-          <div className="heading-big">Lots of work to do?</div>
-          <div className="heading-small">Lets make a list</div>
+         {/* <div className="heading-big">Lots of work to do?</div>
+          <div className="heading-small">Lets make a list</div>*/}
         </div>
       </div>
       <div className="rightside">

@@ -14,6 +14,7 @@ import Person from '@material-ui/icons/Person';
 //import Add from "@material-ui/icons/Add";
 import AddAlert from '@material-ui/icons/AddAlert';
 import EventAvailable from '@material-ui/icons/EventAvailable';
+//import './Home.css';
 
 export const Home = ({currentUser, todos, deleteTodo,
 editTodoValue, editModal, updateTodoHandler}) => {
@@ -65,8 +66,8 @@ editTodoValue, editModal, updateTodoHandler}) => {
          <p style={{}} > <WbSunny /> My Day</p>
           <br />
          
-         <p> <Star /></p>
-          Important
+         <p style={{}}> <Star />Important</p>
+        
           <br />
          
          <p style={{}} > <CalendarToday /> Planned</p>
@@ -115,6 +116,7 @@ editTodoValue, editModal, updateTodoHandler}) => {
           }}
         >
           <br />
+         
           
           <p style={{}} ><WbSunny /> add to My Day</p>
           <br />
@@ -139,11 +141,20 @@ editTodoValue, editModal, updateTodoHandler}) => {
             {!currentUser&&<>
               
               <Header currentUser={currentUser}/>
+              <div style={{backgroundImage:'green'}}>
 
 
-              <p>stryuopysgfuo</p>
+         <h1>HELLO & WELCOME TO MY PAGE</h1>
 
+
+         <p>I am excited to have you get started</p>
+Every day starts a new page in your story .make it a great one today
+         designed by Karabo molepo<br/>
+         <button>Get started</button>
+         designed by Karabo molepo<br/>
+         </div>
             </>}
+          
             
             </form>
             
